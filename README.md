@@ -10,8 +10,10 @@ Reconcile Solana USDC invoices against payment records you already export as CSV
 
 The preview processes the CSVs in your browser. It reconciles the records you provide and requires invoice IDs to be assigned before import. Paid exports and payment collection are currently unavailable.
 
+[Copy the two sample CSV blocks](examples/agency-pilot.md) to try the agency pilot with a known result.
+
 ## Feedback
 
-If you reconcile Solana payments, tell us which tool generates your CSV, which column names it uses, and which reconciliation exception takes the most time. Share column headers or synthetic examples only.
+If you reconcile Solana payments, [tell us in issue #1](https://github.com/ai-venture-lab-alex/receipt-tide/issues/1) which tool generates your CSV, which column names it uses, and which reconciliation exception takes the most time. Share column headers or synthetic examples only.
 
 Receipt Tide is an AI-assisted project.
