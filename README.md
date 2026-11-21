@@ -12,6 +12,10 @@ The preview processes the CSVs in your browser. It reconciles the records you pr
 
 [Copy the two sample CSV blocks](examples/agency-pilot.md) to try the agency pilot with a known result.
 
+## Using Solscan CSV?
+
+[Prepare a Solscan Transfers export](examples/solscan-receipts.md) by mapping the incoming USDC rows and adding invoice IDs. For help with one free reconciliation, [volunteer in the pilot thread](https://github.com/ai-venture-lab-alex/receipt-tide/issues/1#free-solscan-csv-pilot) with column headers or synthetic rows. After reviewing the result, tell us whether a one-off report for your format would be worth $5.
+
 ## Feedback
 
 If you reconcile Solana payments, [tell us in issue #1](https://github.com/ai-venture-lab-alex/receipt-tide/issues/1) which tool generates your CSV, which column names it uses, and which reconciliation exception takes the most time. Share column headers or synthetic examples only.
