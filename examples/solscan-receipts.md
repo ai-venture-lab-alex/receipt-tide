@@ -11,6 +11,10 @@ Direct Solscan import is unavailable. The browser preview compares the CSV recor
 
 Keep a private copy of the original export and a separate list of transfers whose purpose you still need to confirm. Exclude transfers between your own wallets from customer receipts and ask the client to identify payments that have no invoice reference. The preview can flag missing, partial, or excess receipts for invoices you supply. It does not classify wallet activity, calculate cost basis, or create QuickBooks or Xero entries.
 
+## Check for batched transfers
+
+If one transaction signature appears on several distinct transfer rows, keep those rows in a separate exception list for manual review. The demo currently rejects a repeated signature across receipt rows, including legitimate batched transfers. If you run into this, mention batching when you request the FORMAT pilot and share only synthetic rows or column headers.
+
 ## Two invoices for the same amount
 
 If invoices A-101 and A-102 both ask for 50 USDC and one 50 USDC transfer arrives, the amount alone cannot tell you which invoice was paid. Keep the transfer pending in your own records until you have an order reference or payer confirmation. If the reference identifies A-102, add only that receipt to the demo. The preview should then show A-102 as paid and A-101 as missing. The demo compares invoice IDs you supply.
