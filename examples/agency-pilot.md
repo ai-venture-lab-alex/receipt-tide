@@ -19,4 +19,6 @@ AGENCY-001,bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 Expected result: 1,249.75 USDC received and status **short**, a difference of 0.25 USDC. The signatures are synthetic placeholders.
 
+Add a third receipt for 0.25 USDC with its own synthetic signature, then run the preview again. The received total becomes 1,250.00 USDC and the status changes to **matched**. This is the scope of one free pilot: compare the supplied invoice and receipt records and identify the remaining balance. You can then say whether that result would be worth $5 for your own export format. Checkout is unavailable.
+
 If your export uses a different format, [share the tool and column headers](https://github.com/ai-venture-lab-alex/receipt-tide/issues/1). Keep client and transaction data out of public comments.
