@@ -8,7 +8,7 @@ Reconcile Solana USDC invoices against payment records you already export as CSV
 2. Use `invoice_id,expected_usdc` for invoices and `invoice_id,signature,received_usdc` for receipts. Use the same invoice ID in both files, one row per payment, and a decimal point for USDC amounts.
 3. Select **Preview matches** to see the reconciliation.
 
-The preview processes the CSVs in your browser. It reconciles the records you provide and requires invoice IDs to be assigned before import. Paid exports and payment collection are currently unavailable.
+The preview processes the CSVs in your browser. It reconciles the records you provide and requires invoice IDs to be assigned before import. A missing payment in the preview means no matching receipt was included in your CSV. If a wallet sync or export is incomplete, compare it with the original transfer history before using the preview for month-end decisions. Paid exports and payment collection are currently unavailable.
 
 [Copy the two sample CSV blocks](examples/agency-pilot.md) to try the agency pilot with a known result.
 
