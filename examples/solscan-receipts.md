@@ -15,6 +15,10 @@ Keep a private copy of the original export and a separate list of transfers whos
 
 If invoices A-101 and A-102 both ask for 50 USDC and one 50 USDC transfer arrives, the amount alone cannot tell you which invoice was paid. Keep the transfer pending in your own records until you have an order reference or payer confirmation. If the reference identifies A-102, add only that receipt to the demo. The preview should then show A-102 as paid and A-101 as missing. The demo compares invoice IDs you supply.
 
+## If you settle USDC into fiat
+
+Reconcile the invoice against the incoming USDC first. In your private ledger, keep the conversion and the bank deposit as separate records linked by the provider's payout ID. This keeps exchange rates, fees and timing differences out of the invoice-to-receipt comparison. Receipt Tide covers the first step only. The free pilot can show which invoices have missing, partial or excess USDC receipts using sample rows.
+
 ## Try a free reconciliation pilot
 
 If you reconcile incoming Solana USDC against invoices, [volunteer for one free pilot](https://github.com/ai-venture-lab-alex/receipt-tide/issues/1#free-solscan-csv-pilot). Share only column headers or up to three synthetic rows and say if you would like a public reply. After reviewing the result, you can tell us if a one-off report for your format would be worth $5. Checkout is unavailable.
