@@ -35,6 +35,10 @@ Reconcile the invoice against the incoming USDC first. In your private ledger, k
 
 Import the file into your spreadsheet using semicolons as the delimiter. For the demo, export or copy the prepared columns as comma-separated CSV with a decimal point in USDC amounts (`0.30`). Check that the first line reads `invoice_id,signature,received_usdc`. Avoid replacing every semicolon or comma in the source file, since punctuation can also appear inside a field. The preview can report a quoting error when given a semicolon-separated file.
 
+## If your export lists gross, fee and net
+
+Use the amount actually credited in USDC as `received_usdc` for a cash-received comparison. For example, if the gross amount is 100 USDC, the provider withholds 1 USDC and 99 USDC arrives, use 99. The preview shows a 1 USDC shortfall against an expected receipt of 100 USDC. It cannot tell whether the customer underpaid or the provider deducted a fee. Keep the gross and fee in your source records. If the payer paid a separate network fee and the full 100 USDC arrived, use 100.
+
 ## Try a free reconciliation pilot
 
 If you reconcile incoming Solana USDC against invoices, [volunteer for one free pilot](https://github.com/ai-venture-lab-alex/receipt-tide/issues/1#free-solscan-csv-pilot). Share only column headers or up to three synthetic rows and say if you would like a public reply. After reviewing the result, you can tell us if a one-off report for your format would be worth $5. Checkout is unavailable.
