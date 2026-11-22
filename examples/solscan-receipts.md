@@ -15,6 +15,10 @@ Keep a private copy of the original export and a separate list of transfers whos
 
 If one transaction signature appears on several distinct transfer rows, keep those rows in a separate exception list for manual review. The demo currently rejects a repeated signature across receipt rows, including legitimate batched transfers. If you run into this, mention batching when you request the FORMAT pilot and share only synthetic rows or column headers.
 
+## One payment for multiple invoices
+
+If a customer pays 120 USDC for two invoices of 50 and 70 USDC, ask for remittance details and record the allocation in your ledger. Keep that transfer outside the demo: splitting it into two receipt rows would require repeating its signature. Never invent a second signature to make an allocation fit. If this is common in your workflow, mention shared payments in your FORMAT pilot request.
+
 ## Two invoices for the same amount
 
 If invoices A-101 and A-102 both ask for 50 USDC and one 50 USDC transfer arrives, the amount alone cannot tell you which invoice was paid. Keep the transfer pending in your own records until you have an order reference or payer confirmation. If the reference identifies A-102, add only that receipt to the demo. The preview should then show A-102 as paid and A-101 as missing. The demo compares invoice IDs you supply.
