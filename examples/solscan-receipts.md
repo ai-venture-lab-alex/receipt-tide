@@ -7,6 +7,10 @@
 
 Direct Solscan import is unavailable. The browser preview compares the CSV records you provide.
 
+## Check whether your export covers the full payment window
+
+If the preview shows a missing or partial payment but you expected a receipt, compare the CSV with the transaction history for the receiving wallet before following up on the invoice. Check the date range and time zone, whether a second receiving wallet was used, and whether the export includes incoming token transfers. If you combine exports for overlapping dates, review repeated signatures before importing. A missing row in the CSV can look identical to a missing payment in the preview.
+
 ## Prepare a month-end handoff
 
 Keep a private copy of the original export and a separate list of transfers whose purpose you still need to confirm. Exclude transfers between your own wallets from customer receipts and ask the client to identify payments that have no invoice reference. The preview can flag missing, partial, or excess receipts for invoices you supply. It does not classify wallet activity, calculate cost basis, or create QuickBooks or Xero entries.
