@@ -27,6 +27,10 @@ If invoices A-101 and A-102 both ask for 50 USDC and one 50 USDC transfer arrive
 
 Reconcile the invoice against the incoming USDC first. In your private ledger, keep the conversion and the bank deposit as separate records linked by the provider's payout ID. This keeps exchange rates, fees and timing differences out of the invoice-to-receipt comparison. Receipt Tide covers the first step only. The free pilot can show which invoices have missing, partial or excess USDC receipts using sample rows.
 
+## If your spreadsheet exports semicolon-separated CSV
+
+Import the file into your spreadsheet using semicolons as the delimiter. For the demo, export or copy the prepared columns as comma-separated CSV with a decimal point in USDC amounts (`0.30`). Check that the first line reads `invoice_id,signature,received_usdc`. Avoid replacing every semicolon or comma in the source file, since punctuation can also appear inside a field. The preview can report a quoting error when given a semicolon-separated file.
+
 ## Try a free reconciliation pilot
 
 If you reconcile incoming Solana USDC against invoices, [volunteer for one free pilot](https://github.com/ai-venture-lab-alex/receipt-tide/issues/1#free-solscan-csv-pilot). Share only column headers or up to three synthetic rows and say if you would like a public reply. After reviewing the result, you can tell us if a one-off report for your format would be worth $5. Checkout is unavailable.
